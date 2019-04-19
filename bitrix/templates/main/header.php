@@ -15,6 +15,7 @@ IncludeTemplateLangFile(__FILE__);
     <script type="text/javascript" src="/bitrix/templates/.default/js/jquery.carouFredSel-6.1.0-packed.js"></script>
     <script type="text/javascript" src="/bitrix/templates/.default/js/functions.js"></script>
 
+    <link rel="shortcut icon" type="image/x-icon" href="/bitrix/templates/.default/favicon.ico"/>
     <!--[if gte IE 9]><style type="text/css">.gradient {filter: none;}</style><![endif]-->
 </head>
 <body>
@@ -29,7 +30,7 @@ IncludeTemplateLangFile(__FILE__);
                     </td>
                     <td rowspan="2" class="hd_txarea">
                         <span class="tel">8 (495) 212-85-06</span>	<br/>
-                        время работы <span class="workhours">ежедневно с 9-00 до 18-00</span>
+                        <?=GetMessage('WORKING_TIME')?> <span class="workhours">ежедневно с 9-00 до 18-00</span>
                     </td>
                     <td style="width:232px">
                         <form action="">
@@ -66,7 +67,7 @@ IncludeTemplateLangFile(__FILE__);
             </table>
             <div class="nv_topnav">
                 <ul>
-                    <li><a class="menu-img-fon" style="background-image: url(images/nv_home.png);" href="/"><span></span></a></li>
+                    <li><a class="menu-img-fon" style="background-image: url(/bitrix/templates/.default/images/nv_home.png);" href="/"><span></span></a></li>
                     <li><a href=""><span>Компания</span></a>
                         <ul>
                             <li><a href="">Пункт 1</a></li>
