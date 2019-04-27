@@ -15,7 +15,7 @@ foreach($arResult as $arItem):?>
 	<?if ($arItem["IS_PARENT"]):?>
 
 		<?if ($arItem["DEPTH_LEVEL"] == 1):?>
-			<li><a href="<?=$arItem["LINK"]?>" <?if(isset($arItem['PARAMS']['IMG'])):?>class="menu-img-fon" style="background-image: url(<?=$arItem['PARAMS']['IMG']?>);"<?endif?>><span><?=$arItem["TEXT"]?></span></a>
+			<li><a href="<?=$arItem["LINK"]?>" <?if(isset($arItem['PARAMS']['IMG'])):?>class="menu-img-fon" style="background-image: url(<?=$arItem['PARAMS']['IMG']?>);"<?endif?>><span style=""><?=$arItem["TEXT"]?></span></a>
 				<ul>
 		<?else:?>
 			<li></li><a href="<?=$arItem["LINK"]?>"><?=$arItem["TEXT"]?></a>
