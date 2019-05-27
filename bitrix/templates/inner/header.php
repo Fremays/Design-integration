@@ -28,19 +28,21 @@ IncludeTemplateLangFile(__FILE__);
 
     <!--- // end header area --->
     <?$APPLICATION->IncludeComponent(
-        "bitrix:breadcrumb",
-        "nav",
-        Array(
-            "PATH" => "",
-            "SITE_ID" => "s1",
-            "START_FROM" => "0"
-        )
-    );?>
+	"bitrix:breadcrumb", 
+	"nav", 
+	array(
+		"PATH" => "",
+		"SITE_ID" => "s1",
+		"START_FROM" => "0",
+		"COMPONENT_TEMPLATE" => "nav"
+	),
+	false
+);?>
     <div class="main_container page">
         <div class="mn_container">
             <div class="mn_content">
                 <div class="main_post">
                     <div class="main_title">
-                        <p class="title">Заголовок страницы</p>
+                        <p class="title"><?$APPLICATION->ShowTitle(false)?></p>
                     </div>
                     <!-- workarea -->
